@@ -11,6 +11,7 @@ The data is preprocessed by dropping ID columns, simplifying features within the
 The final model has two hidden layers with 9 nodes for layer one, and 3 nodes for layer two. The goal in mind was 75% which was not achieved after several shifts. Previous iterations included more nodes on layer 2 and nadam vs adam optimizers with no significant change in result.
 
 - Results
+  
 Loss: 55%            
 Accuracy: 72%
 Epochs: 100
