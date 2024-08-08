@@ -13,7 +13,7 @@ The initial model has two hidden layers with 9 nodes for layer one, and 3 nodes 
 
 # What steps did you take in your attempts to increase model performance?
 # Optimization 1
-The initial run included 2 hidden layers, relu & sigmoid activation, with 100 epochs.
+The change here was the "nadam" vs "adam" optimizer, which was swapped to see if a slightly different processor would impact output.
 Results:
 - Loss: 55.4%
 - Accuracy: 72.2%
