@@ -4,7 +4,7 @@ This neural network analyzes organizations applying for funding through the Alph
 
 # Data Preprocessing
 - Model Target: "IS_SUCCESSFUL" column
-- Model Features:
+- Model Features: all other columns except the ID's
 - Variables removed: ID columns
 
 # Compiling, Training, and Evaluating the Model
