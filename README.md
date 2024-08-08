@@ -2,21 +2,34 @@
 # Overview 
 This neural network analyzes organizations applying for funding through the Alphabet Soup Nonprofit. The model predicts the likelihood of success for each grant.
 
-- Preprocessing
-  
-The data is preprocessed by dropping ID columns, simplifying features within the application types, and sorting classification fields. Categorical data is encoded while numeric data is scaled before testing and training groups are split. The target column can be identified as "IS_SUCCESSFUL". 
+# Data Preprocessing
+- Model Target: "IS_SUCCESSFUL" column
+- Model Features:
+- Variables removed: ID columns
 
-- Evaluating the Model
-  
-The final model has two hidden layers with 9 nodes for layer one, and 3 nodes for layer two. The goal in mind was 75% which was not achieved after several shifts. Previous iterations included more nodes on layer 2 and nadam vs adam optimizers with no significant change in result.
+# Compiling, Training, and Evaluating the Model
+- How many neurons, layers, and activation functions did you select for your neural network model, and why?   
+The initial model has two hidden layers with 9 nodes for layer one, and 3 nodes for layer two, while sigmoid and relu activations were chosen based on their design for binary predictions. 
 
-- Results
-  
-Loss: 55%            
-Accuracy: 72%
-Epochs: 100
+# What steps did you take in your attempts to increase model performance?
+# Optimization 1
+The initial run included 2 hidden layers, relu & sigmoid activation, with 100 epochs.
+Results:
+- Loss: 55.4%
+- Accuracy: 72.2%
+
+# Optimization 2
+The change was adding more neurons to the existing hidden layers to identify whether the previous model was oversimplifying.
+Results: 
+- Loss: 55.8%
+- Accuracy: 72.1%
+
+# Optimization 3
+The change was adding "elu" as the activation instead of "relu" to avoid the dying relu problem.
+Results:
+- Loss: 55.5%
+- Accuracy: 72.4%
 
 # Application
-I would not recommend using this model before further troubleshooting for higher accuracy and efficiency. 
+Stakeholder opinion would be needed to determine whether this model is fit for deployment. The non-profit would need further risk analysis for the loss of more than 25% of it's investments having unexpected outcomes.
 
-# Usage
