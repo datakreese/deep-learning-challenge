@@ -31,5 +31,5 @@ Results:
 - Accuracy: 72.4%
 
 # Application
-Stakeholder opinion would be needed to determine whether this model is fit for deployment. The non-profit would need further risk analysis for the loss of more than 25% of it's investments having unexpected outcomes.
+Stakeholder opinion would be needed to determine whether this model is fit for deployment. The non-profit would need further risk analysis for the loss of more than 25% of it's investments having unexpected outcomes. Deploying an supervised ML model would allow us to cluster the applications and notice more patterns for success. 
 
