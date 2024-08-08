@@ -9,7 +9,7 @@ This neural network analyzes organizations applying for funding through the Alph
 
 # Compiling, Training, and Evaluating the Model
 - How many neurons, layers, and activation functions did you select for your neural network model, and why?   
-The initial model has two hidden layers with 9 nodes for layer one, and 3 nodes for layer two, while sigmoid and relu activations were chosen based on their design for binary predictions. 
+The initial model has two hidden layers with 9 nodes for layer one, and 3 nodes for layer two, while sigmoid and relu activations were chosen based on their design for binary predictions. 100 epochs were chosen based on class activities.
 
 # What steps did you take in your attempts to increase model performance?
 # Optimization 1
